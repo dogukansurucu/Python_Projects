@@ -1,7 +1,7 @@
 # üniversitede sınav sistemini baz aldım. Üniversitede her dersin vize,final,quiz ve lab notlarının ortalaması alınarak dönem sonu o dersin notu belli olmuş
 # olur. Her üniversitede sınavların yüzdelik dilimleri farklı olurken kendi üniversitemi baz alarak kodladığım bu programda vizelerin ortalamasının
-# %30 u , finalin %50 si , quizlerin %5 ve labların %15 u alınır.Bu yüzdelik dağılım genellikle böyle olmakla beraber hocadan hocaya nadir de olsa
-#değişiklik göstermektedir.
+# %30 u , finalin %50 si , quizlerin %5 ve labların %15 u alınır.Bu yüzdelik dağılım genellikle böyle olmakla beraber 
+# hocadan hocaya nadir de olsa değişiklik göstermektedir.
 
 vize_1 = int(input("1.vize notunuz : "))
 vize_2 = int(input("2.vize notunuz : "))
