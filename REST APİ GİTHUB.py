@@ -1,5 +1,5 @@
 # githubdan requests modülü ile veri alış-verişinde bulunmak için öncelikle github doc sayfasına gidip api bilgilerini öğrenmemiz gerekir.
-# get,put,post gibi metodlarla hangi verileri çekebileceğimizi hangi verileri güncelleyip gönderebileceğimiz döküman sayfasında
+# requests.get(),requests.put(),requests.post() gibi metodlarla hangi verileri çekebileceğimizi hangi verileri güncelleyip gönderebileceğimiz döküman sayfasında
 # yazıyor.Bu kodda temel parçacık api url ve gerektiğinde hesabımın bana ait olduğunu doğrulatmak amacıyla oluşturduğum tokeni
 # fonksiyonlarda kullanmak için classın içinde tanımladım.Sonrası rutin requests metodlarını uygulamak oluyor.
 
