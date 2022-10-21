@@ -9,6 +9,7 @@ def asal(number1, number2):
             ''' üstteki satırdaki koddaki olay şu: iki sayı arasındaki asalları bulacağımızdan ve de asallar pozif olduğundan dolayı sayılar 1 den büyük olmak zorunda'''
             for i in range(2, number):
                 if number % i == 0:
+                    print(f"{number} asal değildir.")
                     break
             else:
                 print(f"{number} asal sayıdır.")
