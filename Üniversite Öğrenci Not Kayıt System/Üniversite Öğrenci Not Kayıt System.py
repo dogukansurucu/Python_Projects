@@ -6,8 +6,7 @@
 import time
 
 def harf_notu_hesapla(data):
-    satir_bol = data[:-2] # 2 öğrenci arasındaki boşluğu kapatıyor.
-    liste = satir_bol.split(':')
+    liste = data.split(':')
     ogrenciAd_Soyad = liste[0]
 
     notlar = liste[1].split(',')
@@ -46,13 +45,15 @@ def harf_notu_hesapla(data):
     return ogrenciAd_Soyad + ": " + harf_notu + "\n"  #bir sonraki öğrencinin verisi için \n kullandık
 
 
-def ortalamalari_oku():
+def harf_notlari_oku():
 
     with open("Sinav Notlari.txt","r",encoding="utf-8") as file:
+
+
         data = file.readlines()
         l = []
         for i in data:
-            l.append(i[:-1])
+            l.append(harf_notu_hesapla(i)[:-1])
         print(l)
 
 
@@ -109,9 +110,9 @@ def dosyadanVeri_Sil():
             file.write(i)
 
 while True:
-    islem = input("1---Notları Oku\n2---Not Gir\n3---Notları Kayıt Et\n4---Veri silme\n5---Çıkış Yap(çıkış için q'ya basınız.)\n"
+    islem = input("Harf Notunu Oku --> [1]\nNot Gir --> [2]\nNotları Kayıt Et --> [3]\nVeri silme --> [4]\nÇıkış Yap --> çıkış için q'ya basınız.\n"
                   ": ")
-#Menüyü daha düzenli hale getir,
+
     if islem == 'q':
         print("2 saniye sonra çıkış yapılıyor.")
         time.sleep(2)
@@ -120,7 +121,7 @@ while True:
     elif 0<int(islem) and int(islem)<=4:
 
         if int(islem) == 1:
-            ortalamalari_oku()
+            harf_notlari_oku()
         elif int(islem) == 2:
             not_bilgilerini_gir()
         elif int(islem) == 3:
@@ -128,7 +129,8 @@ while True:
         elif int(islem) == 4:
             print("Sonuçlar dosyasından veri silme ve sınav notları dosyasını güncelleme işlemine hoş geldiniz.")
             dosyadanVeri_Sil()
-            ortalamalari_oku()
+            harf_notlari_oku()
 
     else:
         raise TypeError("Seçeneklerin dışında bir girdi girdin.")
+
