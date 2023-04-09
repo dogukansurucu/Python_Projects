@@ -40,7 +40,6 @@ print("\n")
 
 
 
-
 """
 tek olan asal sayılar en içteki for'un if bloğunda continue ile başa dönüyor ve for döngüsünün bitmesiyle else bloğuyla
 asal sayıdır ifadesi gösteriliyor.
