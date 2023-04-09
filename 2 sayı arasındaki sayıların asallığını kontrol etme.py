@@ -24,16 +24,12 @@ def a(x,y):
                 if a%b == 0:
                     print(f"{a} asal değildir.")
                     break
-
             else:
                 print(f"{a} asaldır.")
-
         else:
             print(f"{a} asal değildir.")
 
 a(number1,number2)
-
-
 print("\n")
 
 
@@ -63,7 +59,6 @@ def b(x,y):
                 else:
                     print(f"{b} asal değildir.")
                     break
-
             else:
                 print(f"{b} asaldır.")
                 continue
