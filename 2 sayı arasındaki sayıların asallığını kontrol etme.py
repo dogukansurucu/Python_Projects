@@ -10,7 +10,6 @@ en iç blokta asallığı kontrol edilen sayının kendinden önceki 1 den büy�
 Ama sayı çarpanlarından biriyle karşılaşmamış ise if bloğunda sayı boş döner ve döngünün bitmesiyle içteki for döngüsünden çıkılır,
 else bloğuna girilir ve asal sayıdır ifadesi yazdırılır.
 
-
 2 sayısı ise zaten en içteki for'a giremediğinden else bloğuna girer ve asaldır ifadesini döndürür.
 """
 
